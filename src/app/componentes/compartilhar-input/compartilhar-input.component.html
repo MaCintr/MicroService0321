@@ -1,0 +1,30 @@
+<p>compartilhar-input works!</p>
+
+<p>{{nome}}</p>
+
+<h2>Frutas do component compartilhar</h2>
+<ul>
+  <li *ngFor="let fruta of frutas">{{fruta}}</li>
+</ul>
+
+<h2>Cadastro pessoas</h2>
+
+<div class="container mt-3">
+  <h2>Tabela Pessoas</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Primeiro Nome</th>
+        <th>Idade</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pessoa of pessoas">
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.idade}}</td>
+        <td>{{pessoa.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
